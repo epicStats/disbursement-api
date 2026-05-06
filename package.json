@@ -4,13 +4,16 @@
   "description": "Azampay Disbursement API - Modular JavaScript SDK",
   "type": "module",
   "scripts": {
-    "auth":    "node --env-file=.env auth.js",
-    "lookup":  "node --env-file=.env nameLookup.js",
-    "disburse":"node --env-file=.env disburse.js",
-    "status":  "node --env-file=.env statusCheck.js",
+    "auth": "node --env-file=.env auth.js",
+    "lookup": "node --env-file=.env nameLookup.js",
+    "disburse": "node --env-file=.env disburse.js",
+    "status": "node --env-file=.env statusCheck.js",
     "balance": "node --env-file=.env balanceCheck.js"
   },
   "engines": {
     "node": ">=20.6.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
   }
 }

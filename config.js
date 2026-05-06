@@ -26,6 +26,12 @@ export const CONFIG = {
   balanceBaseUrl:  require_env('BALANCE_BASE_URL'),
 
   publicKey: require_env('PUBLIC_KEY'),
+
+  source: require_env('SOURCE_ACCOUNT'),
+  destination: require_env('DESTINATION_ACCOUNT'),
+  amount: require_env('AMOUNT'),
+  pgReferenceId: require_env('TRANSACTION_ID'),
+
 };
 
 if (missing.length) {
