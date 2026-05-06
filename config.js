@@ -27,12 +27,9 @@ export const CONFIG = {
 
   publicKey: require_env('PUBLIC_KEY'),
 
-  source: require_env('SOURCE_ACCOUNT'),
-  destination: require_env('DESTINATION_ACCOUNT'),
-  amount: require_env('AMOUNT'),
-  pgReferenceId: require_env('TRANSACTION_ID'),
-  bankName: require_env('BANK_NAME'),
-  accountNumber: require_env('DESTINATION_ACCOUNT'),
+  source: require_env('SOURCE_ACCOUNT_NUMBER'),
+  destination: require_env('DEST_ACCOUNT_NUMBER'),
+  amount: require_env('DISBURSE_AMOUNT'),
 
 };
 

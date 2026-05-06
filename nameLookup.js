@@ -37,11 +37,7 @@ export async function nameLookup({ bankName, accountNumber }) {
         'Content-Type':  'application/json',
         'Authorization': `Bearer ${token}`,
       },
-      body: JSON.stringify({ 
-        bankName: CONFIG.bankName,
-        accountNumber: CONFIG.accountNumber, 
-        checksum, 
-      }),
+      body: JSON.stringify({ bankName, accountNumber, checksum,}),
     }
   );
 
