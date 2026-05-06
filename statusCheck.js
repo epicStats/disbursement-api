@@ -3,10 +3,9 @@ import { CONFIG, assertValidBankName, BankName } from './config.js';
 
 /**
  * Check the status of a disbursement transaction.
- *
  * @param {Object} params
- * @param {string} params.pgReferenceId - Transaction reference ID from Azampay
- * @param {string} params.bankName      - One of the BankName enum values
+ * @param {string} params.pgReferenceId 
+ * @param {string} params.bankName      
  * @returns {Promise<Object>}
  */
 export async function getTransactionStatus({ pgReferenceId, bankName }) {

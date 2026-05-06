@@ -4,9 +4,8 @@ import { CONFIG, assertValidBankName, BankName } from './config.js';
 
 /**
  * Look up the account holder name for a bank account or mobile wallet.
- *
  * @param {Object} params
- * @param {string} params.bankName      - One of the BankName enum values
+ * @param {string} params.bankName      
  * @param {string} params.accountNumber
  * @returns {Promise<Object>}
  */

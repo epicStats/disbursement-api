@@ -8,7 +8,6 @@ const _cache = {
 
 /**
  * Generate (or return cached) a Bearer access token.
- *
  * @param {boolean} [forceRefresh=false]
  * @returns {Promise<string>} 
  */
@@ -61,7 +60,6 @@ export async function generateToken(forceRefresh = false) {
   return token;
 }
 
-// ─── Run standalone ────
 // node auth.js
 if (process.argv[1].endsWith('auth.js')) {
   generateToken()

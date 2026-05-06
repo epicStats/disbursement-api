@@ -119,7 +119,7 @@ if (process.argv[1].endsWith('disburse.js')) {
       currency:      'TZS',
     },
     destination: {
-      fullName:      process.env.DEST_FULL_NAME      || '',
+      fullName:      process.env.DEST_FULL_NAME      || 'Hussein Mkwizu',
       bankName:      process.env.DEST_BANK_NAME      || BankName.AZAMPESA,
       accountNumber: process.env.DEST_ACCOUNT_NUMBER || '',
       currency:      'TZS',

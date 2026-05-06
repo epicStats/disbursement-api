@@ -43,7 +43,6 @@ export async function checkBalance(bankName = BankName.AZAMPESA) {
   }
 }
 
-// ─── Run standalone ────
 // node --env-file=.env balanceCheck.js [bankName]
 if (process.argv[1].endsWith('balanceCheck.js')) {
   const bankName = process.argv[2] || BankName.AZAMPESA;
