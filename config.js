@@ -31,6 +31,8 @@ export const CONFIG = {
   destination: require_env('DESTINATION_ACCOUNT'),
   amount: require_env('AMOUNT'),
   pgReferenceId: require_env('TRANSACTION_ID'),
+  bankName: require_env('BANK_NAME'),
+  accountNumber: require_env('DESTINATION_ACCOUNT'),
 
 };
 
